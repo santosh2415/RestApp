@@ -1,0 +1,86 @@
+ <div class="tab-pane active" id="tab-guest">
+     <div data-ng-controller="mainCtrl as mc">
+                    <h5>Make Reservation</h5>
+                    
+                    <form role="form" novalidate name="myform" data-ng-submit="mc.addReservation()">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reserveDate">Date</label>
+                                    <input type="date" name="ReservationDate"data-ng-model="mc.newR.ReservationDate" class="form-control" id="reserveDate" placeholder="MM/DD/YYYY" required>
+                                </div>
+                            <div data-ng-messages="myform.ReservationDate.$error" class="errors" data-ng-if="myform.ReservationDate.$dirty">
+                                <p data-ng-message="required">enter valid date</p>
+                               
+                            </div>
+                           </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="reserveTime">Time</label>
+                                    <input type="time"name="ReservationTime" data-ng-model="mc.newR.ReservationTime" class="form-control" id="reserveTime" placeholder="HH:MM"required>
+                                </div>
+                                  <div data-ng-messages="myform.ReservationTim.$error"class="errors" data-ng-if="myform.ReservationTime.$dirty">
+                                <p data-ng-message="required">enter proper time</p>
+                                </div>
+                            </div>
+                        
+                        
+                        <div class="form-group">
+                            <label for="reserveName">Name</label>
+                            <input type="text" name="guestName" class="form-control" id="reserveName" placeholder="Enter Your Name" data-ng-model="mc.newR.guestName" required data-ng-minlength="2" data-ng-maxlength="15">
+                              <div data-ng-messages="myform.guestName.$error"  class="errors" data-ng-if="myform.guestName.$dirty">
+                                <p data-ng-message="required">Please enter your name</p>
+                                <p data-ng-message="minlength">user name must be minimum 2 letters</p>
+                                
+                                </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reservePhone">Phone</label>
+                            <input type="tel" name="phoneNo"class="form-control" id="reservePhone" placeholder="Enter Your Phone"data-ng-model="mc.newR.phoneNo"required data-ng-pattern="/^[0-9]{10}$/">
+                              <div data-ng-messages="myform.phoneNo.$error"class="errors" data-ng-if="myform.phoneNo.$dirty">
+                                <p data-ng-message="required">please enter valid phone number</p>
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="reserveEmail">Email</label>
+                            <input type="email" name="Email" class="form-control" id="reserveEmail" data-ng-model="mc.newR.Email" placeholder="example@domain.com"required  >
+                              <div data-ng-messages="myform.Email.$error" class="errors" data-ng-if="myform.Email.$dirty" >
+                              
+                                <p data-ng-message="required"> email is required</p>
+                                <p  data-ng-message="email">Enter a valid email</p>
+                                </div>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="form-group">                                    <label for="reserveSize">Party Size</label>
+                                    <input type="number" name="guestSize" class="form-control"data-ng-model="mc.newR.guestSize" id="reserveSize" placeholder="# Guests"required>
+                                </div>
+                                  <div data-ng-messages="myform.guestSize.$error" class="errors" data-ng-if="myform.guestSize.$dirty">
+                                <p data-ng-message="required">please enter valid number of guests</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="form-group">
+                                    <label for="reserveSpecial">Special Need</label>
+                                    <input type="text" name="occasion" data-ng-model="mc.newR.occasion" class="form-control" id="reserveSpecial" placeholder="e.g. Birthday, Anniversary etc."required>
+                                </div>
+                                  <div data-ng-messages="myform.occasion.$error" class="errors" data-ng-if="myform.occasion.$dirty">
+                                <p data-ng-message="required">please enter valid reason for reservation</p>--
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn large-btn btn-primary">Reserve</button>
+
+                        </div>
+                    </form>
+                    </div>
+                    </div>
+                    
+        
+                   
+                   
+                  

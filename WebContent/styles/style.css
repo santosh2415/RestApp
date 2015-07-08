@@ -1,0 +1,113 @@
+
+.contain
+{
+    min-width:1366px;
+    min-height:664px;
+    background-color: #31b0d5;
+    margin:0;
+
+}
+.headtag
+{
+    text-align: center;
+}
+.sectioncon
+{
+    margin:30px auto;
+    background-color: #5e5e5e;
+    min-width:340px;
+   min-height:300px;
+}
+.navbar-default {
+    background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+li
+{
+   list-style: none;
+    display:inline-block;
+}
+.content h2 {
+    text-align: center;
+    color: #d6e9c6;
+   border-bottom: 1px solid;
+}
+.content p{
+
+   color: #a6e1ec;
+    margin-left:60px;
+}
+.signin
+{
+    margin-top:40px;
+    margin-bottom: 30px;
+}
+.content
+{
+    padding-bottom: 20px;
+}
+article h5
+{
+    text-align: center;
+    color: mediumspringgreen;
+}
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+}
+.btn
+{
+    background-color: #a94442;
+    color: #a6e1ec;
+}
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+article h3
+{
+    text-align: center;
+}
+.errors
+{
+	color:red;
+	font-size:0.9em;
+	margin-left:100px;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>restaurant</title>
+    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="container contain">
+    <div class="page-header">
+        <h2 class="headtag">Haweli Indian Restaurant</h2>
+    </div>
+    <section>
+        <div class="container sectioncon">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="status.html">Current status</a></li>
+                            <li><a href="reserve.html">Reservations</a></li>
+
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </nav>
+            <article class="content">
+                <div class="tab-pane active" id="tab-reservation">
+                    <h3>Reservation List</h3>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Reservation" id="inputSearch">
+                        <div class="input-group-btn">
+                            <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>CNF</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>SIZE</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>ABCA</td>
+                            <td>santhosh </td>
+                            <td>03/10/2012 2:30PM</td>
+                            <td>4</td>
+                            <td>
+                                <button class="btn btn-primary btn" title="Open Details">
+                                    <span class="glyphicon glyphicon-share"></span>
+                                    <span class="btn-text">Change</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ABCB</td>
+                            <td>Venkata vishal</td>
+                            <td>03/10/2012 2:40PM</td>
+                            <td>4</td>
+                            <td>
+                                <button class="btn btn-primary" title="Open Details">
+                                    <span class="glyphicon glyphicon-share"></span>
+                                    <span class="btn-text">Change</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ABCC</td>
+                            <td>sai ram</td>
+                            <td>03/10/2012 2:00PM</td>
+                            <td>4</td>
+                            <td>
+                                <button class="btn btn-primary" title="Open Details">
+                                    <span class="glyphicon glyphicon-share"></span>
+                                    <span class="btn-text">Change</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ABCD</td>
+                            <td>charitha</td>
+                            <td>03/10/2012 1:30PM</td>
+                            <td>5</td>
+                            <td>
+                                <button class="btn btn-primary" title="Open Details">
+                                    <span class="glyphicon glyphicon-share"></span>
+                                    <span class="btn-text">Change</span>
+                                </button>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </article>
+        </div>
+    </section>
+</div>
+
+
+
+<script type="text/javascript" src="scripts/lib/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="scripts/lib/bootstrap.min.js"></script>
+</body>
+</html>
